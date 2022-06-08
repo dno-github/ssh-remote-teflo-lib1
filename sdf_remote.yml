@@ -1,0 +1,16 @@
+
+# -*- coding: utf-8 -*-
+---
+include:
+  - sdf.yml
+
+name: py3_include_provision
+description: "Provision step"
+
+provision:
+  - name: hello_im_remote_lib_provisioned_host
+    groups: localhost
+    ip_address: 127.0.0.1
+    ansible_params:
+      ansible_connection: local
+
